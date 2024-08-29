@@ -11,8 +11,7 @@
 
 
     <style>
-         /* ... (same as your existing styles) ... */
- body {
+        body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -26,6 +25,7 @@ header {
     position: relative;
 }
 .header-content {
+    size:200rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,9 +46,11 @@ header {
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
+    size:20000rem;
 }
 .logo {
-    width: 100px;
+
+    width: 250px;
     height: auto;
     margin-right: 20px;
 }
@@ -84,11 +86,16 @@ p {
     left: 10px;
     display: flex;
     align-items: center;
+    size:20rem;
+    
 }
 #sps p {
+    
     margin: 0;
 }
 #HEAD1 {
+
+    
     margin-top: 0;
 }
 #HEAD2 {
@@ -205,11 +212,10 @@ footer {
     background-color: #fff9c4;
     color: black;
     text-align: center;
-    padding: 1rem;
-    position: relative;
-    bottom: 0;
+    padding: 100px;
     width: 100%;
 }
+
 fieldset {
     border: 1px solid #ddd;
     padding: 20px;
@@ -243,7 +249,12 @@ legend {
 }
 
 
-    </style>
+#salwan{
+    size:20rem;
+}
+        </style>
+
+  
     
    
 </head>
@@ -251,7 +262,9 @@ legend {
     <header>
         <!-- ... (same as your existing header) ... -->
         <div class="header-content">
-            <img src="https://i.postimg.cc/c1nkLxbJ/sps.png" alt="SPS Logo" class="logo">
+            <div id="salwan">
+            <img src="Logo_of_Income_Tax_Department_India-removebg-preview (1).png" alt="SPS Logo" class="logo">
+            </div>
             <div id="sps">
                 <p id="country">Country: <img src="https://i.postimg.cc/ZRJ2y1BQ/INDIA-ICON-2.png" alt="India Icon" class="india-icon"></p>
             </div>
@@ -513,14 +526,16 @@ legend {
     </main>
     <footer>
 
+
+<div id="footer-child">
         <!-- ... (same as your existing footer) ... -->
         <p>&copy; 2024 Tax Calc. All rights reserved.</p>
     </footer>
+</div>
 
-    <script>
-        
-        // Standard Deduction
-const standardDeduction = 50000;
+    <script >
+                // Standard Deduction
+                const standardDeduction = 50000;
 
 // Function to calculate total deductions
 function updateTotalDeductions() {
@@ -672,7 +687,9 @@ document.getElementById('tax-regime').addEventListener('change', function() {
 });
 document.getElementById('tax-form').addEventListener('submit', calculateTax);
 
+        </script>
+    
 
-    </script>
+   
 </body>
 </html>
