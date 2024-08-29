@@ -9,9 +9,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.png" type="image/png">
 
-
-    <style>
-        body {
+<style>
+    body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -55,6 +54,7 @@ header {
     margin-right: 20px;
 }
 #country {
+    margin-right:-100px;
     font-size: 1.2rem;
     color: black;
     display: flex;
@@ -81,6 +81,7 @@ p {
     text-align: center;
 }
 #sps {
+    margin-left:840px;
     position: absolute;
     top: 10px;
     left: 10px;
@@ -252,10 +253,8 @@ legend {
 #salwan{
     size:20rem;
 }
-        </style>
+    </style>
 
-  
-    
    
 </head>
 <body>
@@ -263,8 +262,9 @@ legend {
         <!-- ... (same as your existing header) ... -->
         <div class="header-content">
             <div id="salwan">
-            <img src="Logo_of_Income_Tax_Department_India-removebg-preview (1).png" alt="Logo1" class="logo">
-            </div>
+                <a href="index.html">
+            <img src="Logo_of_Income_Tax_Department_India-removebg-preview (1).png" alt="SPS Logo" class="logo">
+            </a></div>
             <div id="sps">
                 <p id="country">Country: <img src="https://i.postimg.cc/ZRJ2y1BQ/INDIA-ICON-2.png" alt="India Icon" class="india-icon"></p>
             </div>
@@ -516,9 +516,12 @@ legend {
                 
                
                 <button type="submit">Calculate Tax</button>
+                <hr></hr>
                 <div id="Total-Tax"></div>
+                
                 <div id="Advance"></div>
                 <div id="Net"></div>
+                <hr></hr>
 
                 
             </div>
